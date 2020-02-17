@@ -8,7 +8,7 @@
 
 [Първи стъпки с Java](wiki/type.md)
 
-[Задачи](wiki/tasks/task1.md)
+[Задачи](wiki/tatsks/task1.md)
 
 ## 3 Лабораторно упражнение:
 
