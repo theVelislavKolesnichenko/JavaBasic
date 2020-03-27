@@ -28,15 +28,15 @@
 
 ## 5 Лабораторно упражнение:
 
-[Java ООП 2](wiki/oopjava2.md)
+[Колекции](wiki/collection.md)
 
-[Задачи](wiki/tatsks/task3.md)
+[Задачи](wiki/tatsks/task4.md)
 
 ## 6 Лабораторно упражнение:
 
-[Java ООП 2](wiki/collection.md)
+[Изключения](wiki/exeption.md)
 
-[Задачи](wiki/tatsks/task4.md)
+[Задачи](wiki/tatsks/task5.md)
 
 ## 7 Лабораторно упражнение:
 
