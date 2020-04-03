@@ -18,25 +18,20 @@
 
 [Java ООП](wiki/oopjava.md)
 
-[Задачи](wiki/tatsks/task2.md)
-
 ## 4 Лабораторно упражнение:
 
 [Java ООП 2](wiki/oopjava2.md)
 
-[Задачи](wiki/tatsks/task3.md)
 
 ## 5 Лабораторно упражнение:
 
-[Колекции](wiki/collection.md)
+[Изключения](wiki/exeption.md)
 
-[Задачи](wiki/tatsks/task4.md)
+[Wrapper types](wiki/wrappertypes.md)
 
 ## 6 Лабораторно упражнение:
 
-[Изключения](wiki/exeption.md)
-
-[Задачи](wiki/tatsks/task5.md)
+[Колекции](wiki/collection.md)
 
 ## 7 Лабораторно упражнение:
 
