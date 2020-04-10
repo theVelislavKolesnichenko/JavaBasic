@@ -253,6 +253,8 @@ Map е интерфейс, за всички колекции който го и
 - TreeMap/TreeSet - червено-черни дървета. Запазват естествена наредба. Елементите трябва да имплементират интерфейса Comparable (или да се подава имплементация на Comparator). Логаритмична сложност за повечето операции
 - HashMap/HashSet - хеш таблици. Нямат естествена наредба. Елементите трябва да имплементират методите hashCode() и equals(). Константна сложност за повечето операции
 
+![image](https://gitpitch.com/pitchme/cdn/github/fmi/java-course/master/57356819DF63DCBBD6271422DEB50936E29F12F1A90EBA28BCE8CA848DA3BA77CC656B53E1096668028F69A5FEA89A267480034962730B97F328681296E3362359A19D20800D8967C4B7378FD5146572D98731AA49342950/images/05.0.1-data-structures-complexity.png)
+
 # Generics
 
 ```java
