@@ -275,13 +275,9 @@ Integer i = (Integer) list.iterator().next(); //кастване към клас
 
 ```List<E>``` - // Чете се "списък от E"
 
-<table>
-<tr>
-<td>Не-generic кутия</td>
-<td>Generic кутия</td>
-</tr>
-<tr>
-<td>
+**Не-generic кутия**
+
+```java
 public class Box {
 private Object value;
  
@@ -293,8 +289,11 @@ private Object value;
         this.value = value;
     }
 }
-</td>
-<td>
+```
+
+**Generic кутия**
+
+```java
 public class Box {
     private Object value;
  
@@ -306,10 +305,7 @@ public class Box {
         this.value = value;
     }
 }
-</td>
-</tr>
-</btable>
-</tabla>
+```
 
 ## Създаване на инстанции
 
