@@ -25,7 +25,7 @@
 
 ## 5 Лабораторно упражнение:
 
-[Изключения](wiki/exeption.md)
+[Изключения](wiki/exception.md)
 
 [Wrapper types](wiki/wrappertypes.md)
 
@@ -36,6 +36,8 @@
 ## 7 Лабораторно упражнение:
 
 [Примерна задача за изпит](wiki/tatsks/example.md)
+
+[Задача за упражнение](wiki/examples/examp1.md)
 
 ## 8 Лабораторно упражнение:
 
