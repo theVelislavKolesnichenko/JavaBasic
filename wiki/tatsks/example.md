@@ -1,5 +1,7 @@
 # Задача
 
+[Publisher](https://github.com/theVelislavKolesnichenko/JavaBasics/tree/master/ExampleProjects/Publisher/src/bg/tu_varna/cs/publisher)
+
 I. Да се състави интерфейс „Редактор на книга“, методи
 
 - void genereteBook(String title, int numberPages ): създава книга със заглавие title и numberPages празни страници
