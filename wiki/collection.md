@@ -412,3 +412,26 @@ public <T extends Number & Comparable> List<T> anotherMethod(T[] a) {
   - метода hashCode()
   - метода equals()
 
+## Сортиране на колекции
+
+Класа Collections съържа функции за сортиране на колекции.
+
+Функцията Collections.sort приема като входен параметър функцията която трябва да се сортира.
+
+Критерия по който ще се сортира колекцията се подава като втори параметър посредством обект от клас имплементиращ интерфейса Comparator.
+
+**Пример**
+
+```java
+public class SortById implements Comparator<EMailImpl> {
+	@Override
+	public int compare(EMailImpl o1, EMailImpl o2) {
+		return o1.compareToId(o2.getUsername());
+	}
+}
+```
+
+Метода compare служи за сравнение на два обекта от колекцията. Той връща като резултат 
+- -1 ако левия обект е по малък
+- 0 ако двата обекта са равни
+- 1 ако деснич обект е по малък
