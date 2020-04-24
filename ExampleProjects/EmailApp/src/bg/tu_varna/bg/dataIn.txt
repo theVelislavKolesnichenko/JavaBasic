@@ -1,0 +1,6 @@
+7-AliBaba@yahoo.bg:=aTest Message 1
+2-AliBaba1@abv.bg:=cvTest Message 2
+3-AliBaba2@gmail.bg:=tyTest Message 3
+4-asdbaasdtkir3@abv.bg:=aaTest Message 4
+5-baasdtkir4@post.bg:=baTest Message 5
+6-asdAliBaba5@abv.bg:=aiTest Message 6
