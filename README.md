@@ -47,7 +47,7 @@
 
 [Задачи](wiki/tatsks/task3.md)
 
-[Домашно](wiki/tatsks/task4.md)
+[Домашно - до 30.04.2020](wiki/tatsks/task4.md)
 
 ## 10 Лабораторно упражнение:
 
