@@ -65,6 +65,13 @@ public interface Iterable<T> {
 
 Collection е интерфейс, за всички колекции който го имплементират могат да се използват методите:
 
+**Пример**
+```java
+//дефиниране на колекция от интерфейса Collection
+Collection<Integer> integers; //колекция от тип int
+Collection<Book> books; //колекция от тип книги
+
+```
 ```java
 //броя на елементите в колекцията
 int size()
