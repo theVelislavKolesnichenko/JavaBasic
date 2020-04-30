@@ -38,16 +38,12 @@ public class PostBox implements IPost {
 	}
 	
 	public List<EMailImpl> providerIdSort() {
-		Collections.sort((List<EMailImpl>) inColl, 
-				new SortById());
-		
+		Collections.sort((List<EMailImpl>) inColl, new SortById());
 		return (List<EMailImpl>) inColl;
 	}
 	
 	public List<EMailImpl> messageSort() {
-		Collections.sort((List<EMailImpl>) inColl, 
-				new SortByMessage());
-		
+		Collections.sort((List<EMailImpl>) inColl, new SortByMessage());
 		return (List<EMailImpl>) inColl;
 	}
 	
