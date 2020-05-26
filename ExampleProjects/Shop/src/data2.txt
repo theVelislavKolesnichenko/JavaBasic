@@ -1,0 +1,2 @@
+type1 Intel 12 500 5.6
+type2 HP 10 800 27

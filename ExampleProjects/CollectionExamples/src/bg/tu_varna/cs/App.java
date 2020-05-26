@@ -1,9 +1,76 @@
 package bg.tu_varna.cs;
 
+import java.util.Scanner;
+
 public class App {
 
 	public static void main(String[] args) {
 
+		Scanner scanner = new Scanner(System.in);
+		
+		int op;
+		do {
+			System.out.println("Menu Collection Example");
+			System.out.println("1. Array List Example");
+			System.out.println("2. Map Example");
+			System.out.println("3. Exit");
+			
+			op = scanner.nextInt();	
+			
+			switch (op) {
+			case 1:
+				ArrayListExample();
+				break;
+			case 2: 
+				MapExample();
+				break;
+			case 3:
+				return;
+			}
+			
+		} while (op != 3);
+	}
+
+	private static void MapExample() {
+		MapExample mapExample = new MapExample();
+		
+		mapExample.add("Rainbow Six Siege", 4);
+		mapExample.add("Apex Legends", 2);
+		mapExample.add("Overwatch", 1);
+		mapExample.add("Fortnite Battle Royale", 2);
+		mapExample.add("PlayerUnknown's Battlegrounds", 3);
+		mapExample.add("Rocket League", 4);
+		mapExample.add("Hearthstone", 1);
+		mapExample.add("League of Legends", 5);
+		mapExample.add("CS:GO", 6);
+		
+		System.out.println(mapExample);
+		
+		 SearchGame(mapExample);
+
+		int value = mapExample.update("Overwatch", 2);
+		
+		System.out.println("Old value: " + value);
+		
+		SearchGame(mapExample);
+		
+	}
+
+	private static void SearchGame(MapExample mapExample) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter game name: ");
+		String game = scanner.nextLine();
+		
+		if(mapExample.haxExist(game)) {
+			System.out.println("Game " + game + " is play by: " 
+									+ mapExample.search(game));
+		} else {
+			System.out.println("The game missing");
+		}
+	}
+
+	private static void ArrayListExample() {
+		
 		ArrayListExample arrayListExample = new ArrayListExample();
 		
 		arrayListExample.add('G');
@@ -58,5 +125,5 @@ public class App {
 			System.out.println("empty");
 		}
 	}
-
+	
 }
