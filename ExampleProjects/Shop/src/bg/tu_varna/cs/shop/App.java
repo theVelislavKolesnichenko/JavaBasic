@@ -4,6 +4,8 @@ import java.io.IOException;
 
 public class App {
 
+	
+	
 	public static void main(String[] args) {
 		Shop shop = new Shop();
 		
@@ -19,6 +21,8 @@ public class App {
 		System.out.println(shop.getManufacturerWithMaxStock());
 		
 		System.out.println(shop.getStockWithMaxFrequency());
+		
+		
 		
 	}
 
