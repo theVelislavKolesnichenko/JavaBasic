@@ -1,13 +1,19 @@
 package bg.tu_varna.sit;
 
-public class University<E extends Person> {
-    private E[] items;
+import java.util.*;
 
-    public void setItems(E[] items) {
+public class University<K, V extends Person> {
+    private Map<K, V> items;
+
+    public University() {
+        this.items = new HashMap<>();
+    }
+
+    public void setItems(Map<K, V> items) {
         this.items = items;
     }
 
-    public E[] getItems() {
+    public Map<K, V> getItems() {
         return items;
     }
 
@@ -15,21 +21,17 @@ public class University<E extends Person> {
         System.out.println(item);
     }
 
-    @Override
-    public String toString() {
-
-        String builder = "";
-        for (int i = 0; i < items.length; i++) {
-            builder += String.format("%d: %s \n", (i + 1), items[i].toString());
-        }
-        return builder;
+    public void add(K key, V item) {
+        items.put(key, item);
     }
 
-    public String itemsToString() {
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < items.length; i++) {
-            builder.append(String.format("%d: %s \n", (i + 1), items[i].toString()));
+    @Override
+    public String toString() {
+        String builder = "";
+        for (Map.Entry<K, V> entry : items.entrySet()) {
+            builder += String.format("%s : %s \n", entry.getKey(), entry.getValue());
         }
-        return builder.toString();
+
+        return builder;
     }
 }

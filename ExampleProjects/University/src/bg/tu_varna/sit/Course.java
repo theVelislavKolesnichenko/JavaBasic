@@ -8,7 +8,7 @@ public enum Course {
     THIRD(3),
     FOURTH(4);
 
-    private int number;
+    private final int number;
 
     Course(int number) {
         this.number = number;

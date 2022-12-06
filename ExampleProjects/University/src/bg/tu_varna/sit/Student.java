@@ -1,26 +1,59 @@
 package bg.tu_varna.sit;
 
-import java.util.Objects;
+import sun.reflect.generics.tree.Tree;
 
-public class Student extends Person  {
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
+import java.util.TreeMap;
+
+public class Student extends Person implements Comparable<Student> {
+
+    private int number;
+
+    private Course course;
+
+    private Map<String, Integer> semestrialKontrol;
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        return course == student.course;
+        return Objects.equals(number, student.number);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(course);
+        return Objects.hashCode(this.number);
     }
 
-    private Course course;
+    @Override
+    public int compareTo(Student o) {
+        return Integer.compare(this.number, o.number);
+    }
 
-    public Student(String firstname, String lastname) throws StudentException {
+    public Student(String firstname, String lastname, Integer number) throws StudentException {
         this.setFirstname(firstname);
         this.setLastname(lastname);
+        this.number = number;
+        this.semestrialKontrol = new TreeMap<>();
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void addSemestrilaKontrol(String name, Integer points) {
+        semestrialKontrol.put(name, points);
+    }
+
+    public Map<String, Integer> getSemestrialKontrol() {
+        return semestrialKontrol;
     }
 
     public void setFirstname(String firstname) throws StudentException {
@@ -44,12 +77,13 @@ public class Student extends Person  {
 
     @Override
     public String toString() {
-        return firstname + ' ' + lastname + ' ' + course;
-    }
+        StringBuffer buffer = new StringBuffer();
+        buffer.append('\n' + number + " " + firstname + ' ' + lastname + ' ' + course + '\n');
 
+        for (String key : this.getSemestrialKontrol().keySet()) {
+            buffer.append(key + " -> " + this.getSemestrialKontrol().get(key) + " ");
+        }
 
-    @Override
-    public int compareTo(Person o) {
-        return 0;
+        return  buffer.toString();
     }
 }
