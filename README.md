@@ -1,5 +1,3 @@
-theme: minima
-
 # JavaBasics
 
 [Книга "Основи на програмирането" с Java](https://java-book.softuni.bg/)
